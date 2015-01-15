@@ -1,8 +1,8 @@
 === Advanced Custom Fields: hidden Field ===
-Contributors: erictr1ck
+Contributors: Björn Folbert, forked from https://github.com/erickertz/acf-hidden
 Tags: advanced custom fields, hidden field
-Requires at least: 3.5
-Tested up to: 3.8.1
+Requires at least: 5.0
+Tested up to: 5.1.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,11 +13,12 @@ A hidden field for Advanced Custom Fields
 
 A hidden field for Advanced Custom Fields based off of acf-field-type-template: https://github.com/elliotcondon/acf-field-type-template. Provides litte value on its own but could be handy when used in conjunction with other plugins.
 
+Added by Björn Folbert: I simply added the option to set a default value.
+
 = Compatibility =
 
 This ACF field type is compatible with:
 * ACF 5
-* ACF 4
 
 == Installation ==
 
