@@ -45,6 +45,7 @@ class acf_field_hidden extends acf_field {
 
 		$this->defaults = array(
 			'default_value'	=> '',
+			'return_default_value' => 'yes'
 		);
 
 
@@ -95,6 +96,20 @@ class acf_field_hidden extends acf_field {
 			'name'			=> 'default_value',
 			'prepend'		=> '',
 		));
+
+		acf_render_field_setting( $field, array(
+			'label'			=> __('Adhere to default value changes','acf-hidden'),
+			'instructions'	=> __('If the default value should always be used.','acf-hidden'),
+			'type'			=> 'radio',
+			'name'			=> 'return_default_value',
+			'choices' 	=> array (
+										'yes' => 'Yes',
+										'no' => 'No',
+			),
+			'default_value' => 'yes',
+			'prepend'		=> '',
+		));
+
 	}
 
 
@@ -115,7 +130,6 @@ class acf_field_hidden extends acf_field {
 	*/
 
 	function render_field( $field ) {
-
 		// CSS to hide the field and its wrapper
 		?>
 		<style type="text/css">.field_key-<?php echo $field['key']; ?>{display:none;}</style>
@@ -326,15 +340,18 @@ class acf_field_hidden extends acf_field {
 	*/
 
 	/*
-
 	function update_value( $value, $post_id, $field ) {
+
+		if($field['return_default_value'] == 'yes') {
+
+			$value = $field['default_value'];
+
+		}
 
 		return $value;
 
 	}
-
 	*/
-
 
 	/*
 	*  format_value()
@@ -352,23 +369,22 @@ class acf_field_hidden extends acf_field {
 	*  @return	$value (mixed) the modified value
 	*/
 
-	/*
+
 
 	function format_value( $value, $post_id, $field ) {
 
 		// bail early if no value
 		if( empty($value) ) {
 
-			return $value
+			return $value;
 
 		}
 
 
 		// apply setting
-		if( $field['font_size'] > 12 ) {
+		if( $field['return_default_value'] == 'yes' ) {
 
-			// format the value
-			// $value = 'something';
+			$value = $field['default_value'];
 
 		}
 
@@ -377,7 +393,6 @@ class acf_field_hidden extends acf_field {
 		return $value;
 	}
 
-	*/
 
 
 	/*
