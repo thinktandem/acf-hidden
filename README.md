@@ -6,7 +6,7 @@ A hidden field for Advanced Custom Fields
 
 ### Description
 
-A hidden field for Advanced Custom Fields based off of acf-field-type-template: https://github.com/elliotcondon/acf-field-type-template. Provides litte value on its own but could be handy when used in conjunction with other plugins.
+A hidden field for Advanced Custom Fields based off of acf-field-type-template: https://github.com/elliotcondon/acf-field-type-template. Provides litte value on its own but could be handy when used in combination with other plugins.
 
 ### Compatibility
 
