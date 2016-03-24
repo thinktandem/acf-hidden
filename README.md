@@ -12,7 +12,6 @@ A hidden field for Advanced Custom Fields based off of acf-field-type-template: 
 
 This ACF field type is compatible with:
 * ACF 5
-* ACF 4
 
 ### Installation
 
