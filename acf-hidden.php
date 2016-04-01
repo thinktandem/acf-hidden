@@ -2,11 +2,11 @@
 
 /*
 Plugin Name: Advanced Custom Fields: Hidden Field
-Plugin URI: http://1trickpony.com
+Plugin URI: http://folbert.com
 Description: A hidden field for Advanced Custom Fields
-Version: 1.0.0
-Author: erictr1ck
-Author URI: http://1trickpony.com
+Version: 1.5.1
+Author: folbert
+Author URI: http://folbert.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
