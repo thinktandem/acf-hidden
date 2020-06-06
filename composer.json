@@ -1,18 +1,10 @@
 {
-  "name": "folbert/acf-hidden",
+  "name": "thinktandem/acf-hidden",
   "type": "wordpress-plugin",
   "description": "Hidden field for Advanced Custom Fields",
   "keywords": ["acf","advanced custom fields", "hidden"],
-  "homepage": "https://github.com/folbert/acf-hidden",
+  "homepage": "https://github.com/thinktandem/acf-hidden",
   "license": "GPLv3",
-  "authors": [
-    {
-      "name": "Björn Folbert",
-      "email": "b@folbert.com",
-      "homepage": "http://folbert.com",
-      "role": "Developer"
-    }
-  ],
   "require": {
     "php": ">=5.4.0"
   }
